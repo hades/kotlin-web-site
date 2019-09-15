@@ -76,7 +76,7 @@ fun preparePostAsync(callback: (Token) -> Unit) {
 This in principle feels like a much more elegant solution, but once again has several issues:
 
 * Difficulty of nested callbacks. Usually a function that is used as a callback, often ends up needing its own callback. This leads to a series of nested callbacks which
-lead to incomprehensible code. The pattern is often referred to as the titled christmas tree (brace represent branches of the tree).
+lead to incomprehensible code. The pattern is often referred to as the tilted christmas tree (brace represent branches of the tree).
 * Error handling is complicated. The nesting model makes error handling and propagation of these somewhat more complicated. 
 
 Callbacks are quite common in event-loop architectures such as JavaScript, but even there, generally people have moved away to using other approaches such as promises or reactive extensions.
